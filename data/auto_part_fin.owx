@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/bizon/ontologies/2023/11/auto-parts"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/bizon/ontologies/2023/11/auto-parts">
+    <Prefix name="" IRI="http://www.semanticweb.org/bizon/ontologies/2023/11/auto-parts/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>An OWL ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Ontology about auto parts</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.1</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AutoManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutoPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutoPartManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BYD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chevrolet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Daewoo_ZAZ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FAW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Foton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geely"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Great_Wall_HAVAL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hyundai"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lifan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ravon_GM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Renault"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ваз"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Запчасти_двигателя"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Коробка_передач"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Кузов"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Освещение"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Охлаждение_и_отопление"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Подвеска"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Рулевое_управление"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Система_выхлопа"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Смазки_и_жидкости"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Тормозная_система"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Электрика"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAutoManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAutoPartManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sku"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AutoPart"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAutoManufacturer"/>
+            <Class IRI="#AutoManufacturer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutoPart"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAutoPartManufacturer"/>
+            <Class IRI="#AutoPartManufacturer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BYD"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chana"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chery"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chevrolet"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Daewoo_ZAZ"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FAW"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Foton"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geely"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Great_Wall_HAVAL"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyundai"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JAC"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kia"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lifan"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ravon_GM"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renault"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ваз"/>
+        <Class IRI="#AutoManufacturer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Запчасти_двигателя"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Коробка_передач"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Кузов"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Освещение"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Охлаждение_и_отопление"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Подвеска"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Рулевое_управление"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Система_выхлопа"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Смазки_и_жидкости"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Тормозная_система"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Электрика"/>
+        <Class IRI="#AutoPart"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAutoPartManufacturer"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAutoManufacturer"/>
+        <Class IRI="#AutoManufacturer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAutoPartManufacturer"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAutoPartManufacturer"/>
+            <Class IRI="#AutoPartManufacturer"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#price"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sku"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#url"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#price</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sku</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#url</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
